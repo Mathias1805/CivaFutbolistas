@@ -1,5 +1,6 @@
 package Api.Futbolistas.Civa.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,6 +29,6 @@ public class FutbolistaEntity {
     @Column(name = "Caracteristicas")
     private String Caracteristicas;
     @ManyToOne
-    @JoinColumn(name = "IdPosicion", referencedColumnName = "IdPosicion", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "IdPosicion", referencedColumnName = "IdPosicion", nullable = false)
     private PosicionEntity Posicion;
 }
