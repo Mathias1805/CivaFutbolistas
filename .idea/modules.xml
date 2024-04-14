@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Civa/Civa.iml" filepath="$PROJECT_DIR$/Civa/Civa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CivaFutbolistas.iml" filepath="$PROJECT_DIR$/.idea/CivaFutbolistas.iml" />
     </modules>
   </component>
