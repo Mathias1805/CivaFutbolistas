@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 
 
+
 function App() {
 
 
@@ -101,7 +102,29 @@ function App() {
         };
         obtenerDatos();
     }, [a]);
-
+    const Info = (e: any) => {
+        fetch('http://localhost:8080/futbolista/' + e.idFutbolista, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            }
+        })
+            .then(response => response.json()) // Convertir la respuesta a JSON
+            .then(data => {
+                // Imprimir la respuesta en una alerta
+                alert("Nombre: "+data.nombre +
+                    "\nApellidos: "+ data.apellidos +
+                    "\nPosición: "+ data.posicion.posicion +
+                    "\nCaracterísticas: "+ data.caracteristicas +
+                    "\nFecha de Nacimiento: "+ new Date(data.fechaNacimiento).toLocaleDateString());
+            })
+            .catch(error => {
+                console.error('Error al obtener información:', error);
+                // Si ocurre un error, también puedes mostrarlo en una alerta
+                alert('Error al obtener información');
+            });
+    }
     return (
         <div className="App flex-col h-screen">
             <div className='flex w-full h-[70px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
@@ -154,8 +177,8 @@ function App() {
                                 {elemento.posicion.posicion}
                             </td>
                             <td className="px-6 py-4 text-right">
-                                <a href="#"
-                                   className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Info</a>
+                                <button onClick={() => Info(elemento)} type="button"
+                                   className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Info</button>
                             </td>
                         </tr>
                     ))}
