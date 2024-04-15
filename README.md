@@ -38,3 +38,18 @@ Si tienes alguna pregunta o simplemente quieres saludar, ¡no dudes en ponerte e
 - Email: mnicolasprincipe@gmail.com
 - Telf: +51 976894951
 - LinkedIn: [Mathias Nicolas Principe Carranza](linkedin.com/in/mathias-nicolas-principe-carranza-90abab118)
+
+# Galería de Prueba
+## Base de Datos
+Estructura Física de la Base de Datos Autogenerada
+![image](https://github.com/Mathias1805/CivaFutbolistas/assets/120082878/e40b98e0-08ca-4529-ab65-619dc266c3ac)
+
+## Sistema Creado
+
+![image](https://github.com/Mathias1805/CivaFutbolistas/assets/120082878/82cdfafe-6265-41c2-ad3c-9f935f79bc8b)
+
+![image](https://github.com/Mathias1805/CivaFutbolistas/assets/120082878/1e4b1d71-4122-4e1d-9a73-02f94f3ad975)
+
+
+
+
